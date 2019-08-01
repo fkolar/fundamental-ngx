@@ -10,6 +10,8 @@ import * as comboboxDisplayHtml from '!raw-loader!./examples/combobox-displaywit
 import * as comboboxDisplayTs from '!raw-loader!./examples/combobox-displaywith-example.component.ts';
 import * as comboboxTemplateH from '!raw-loader!./examples/combobox-template-example.component.html';
 import * as comboboxTemplateT from '!raw-loader!./examples/combobox-template-example.component.ts';
+import * as comboboxFormT from '!raw-loader!./examples/combobox-forms-example.component.ts';
+import * as comboboxFormH from '!raw-loader!./examples/combobox-forms-example.component.html';
 import * as comboboxSeaTs from '!raw-loader!./examples/combobox-search-function-example.component.ts';
 import * as comboboxSeaHtml from '!raw-loader!./examples/combobox-search-function-example.component.html';
 import { ExampleFile } from '../../core-helpers/code-example/example-file';
@@ -83,6 +85,17 @@ export class ComboboxDocsComponent {
         {
             language: 'typescript',
             code: comboboxTemplateT
+        }
+    ];
+
+    comboboxFormExample: ExampleFile[] = [
+        {
+            language: 'html',
+            code: comboboxFormH
+        },
+        {
+            language: 'typescript',
+            code: comboboxFormT
         }
     ];
 
