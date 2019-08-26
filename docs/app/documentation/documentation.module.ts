@@ -401,6 +401,8 @@ import { RadioFormGroupExampleComponent } from './component-docs/radio/examples/
 import { RadioExamplesComponent } from './component-docs/radio/examples/radio-examples.component';
 import { RadioDocsComponent } from './component-docs/radio/radio-docs.component';
 import { RadioHeaderComponent } from './component-docs/radio/radio-header/radio-header.component';
+import { DatePickerDefaultFormatsExampleComponent } from './component-docs/date-picker/examples/date-picker-default-formats-example.component';
+import { DatetimeDefaultFormatExampleComponent } from './component-docs/datetime-picker/examples/datetime-default-format-example.component';
 import { ComboboxSearchFunctionExampleComponent } from './component-docs/combobox/examples/combobox-search-function-example.component';
 
 @NgModule({
@@ -506,6 +508,7 @@ import { ComboboxSearchFunctionExampleComponent } from './component-docs/combobo
         DatetimeExampleComponent,
         DatetimeNonMeridianExampleComponent,
         DatetimeProgramExampleComponent,
+        DatetimeDefaultFormatExampleComponent,
         DatetimeFormatExampleComponent,
         DatetimeFormExampleComponent,
         DatetimePickerAllowNullExampleComponent,
@@ -719,6 +722,7 @@ import { ComboboxSearchFunctionExampleComponent } from './component-docs/combobo
         DatePickerI18nExampleComponent,
         DatePickerPositionExampleComponent,
         DatePickerFormatExampleComponent,
+        DatePickerDefaultFormatsExampleComponent,
         SearchPipe,
         ModalPositionExampleComponent,
         ContainerComponent,
