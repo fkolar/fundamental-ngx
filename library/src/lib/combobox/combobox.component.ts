@@ -102,7 +102,7 @@ export class ComboboxComponent implements ControlValueAccessor, OnInit, OnChange
      * trigger onChange function, until it matches one of displayed dropdown values. Also communicating with combobox
      * can be achieved only by objects with same type as dropdownValue */
     @Input()
-    dropdownMode: boolean = false;
+    communicateByObject: boolean = false;
 
     /** Display function. Accepts an object of the same type as the
      * items passed to dropdownValues as argument, and outputs a string.
@@ -216,7 +216,7 @@ export class ComboboxComponent implements ControlValueAccessor, OnInit, OnChange
     /** Set the input text of the input. */
     set inputText(value) {
         this.inputTextValue = value;
-        if (this.dropdownMode) {
+        if (this.communicateByObject) {
             this.onChange(this.getOptionObjectByDisplayedValue(value));
         } else {
             this.onChange(value);
@@ -226,7 +226,7 @@ export class ComboboxComponent implements ControlValueAccessor, OnInit, OnChange
 
     /** @hidden */
     writeValue(value: any): void {
-        if (this.dropdownMode) {
+        if (this.communicateByObject) {
             this.inputTextValue = this.displayFn(value);
         } else {
             this.inputTextValue = value;

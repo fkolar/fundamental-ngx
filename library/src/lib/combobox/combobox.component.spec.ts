@@ -127,7 +127,7 @@ describe('ComboboxComponent', () => {
 
     it('should handle input entry on dropdown mode', () => {
         spyOn(component, 'onChange');
-        component.dropdownMode = true;
+        component.communicateByObject = true;
         component.displayFn = (item: any): string => {
             return item.displayedValue;
         };
@@ -137,7 +137,7 @@ describe('ComboboxComponent', () => {
 
     it('should handle wrong input entry on dropdown mode', () => {
         spyOn(component, 'onChange');
-        component.dropdownMode = true;
+        component.communicateByObject = true;
         component.displayFn = (item: any): string => {
             if (item) {
                 return item.displayedValue;
@@ -150,7 +150,7 @@ describe('ComboboxComponent', () => {
     });
 
     it('should handle write value from outside on dropdown mode', () => {
-        component.dropdownMode = true;
+        component.communicateByObject = true;
         component.displayFn = (item: any): string => {
             return item.displayedValue;
         };

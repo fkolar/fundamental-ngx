@@ -1,9 +1,9 @@
 <form [formGroup]="customForm">
-    Dropdown Mode on combobox
+    Combobox with communication via Objects
     <fd-combobox [dropdownValues]="dropdownValues"
                  [placeholder]="'Type some text...'"
                  [displayFn]="myDisplayFunction"
-                 [dropdownMode]="true"
+                 [communicateByObject]="true"
                  formControlName="itemOnDropdownMode">
     </fd-combobox>
 </form><br/>
@@ -14,7 +14,7 @@ Json Value: {{customForm.controls.itemOnDropdownMode.value | json}}
 <br/><br/>
 
 <form [formGroup]="customForm">
-    Basic Mode on combobox
+    Combobox with communication via displayed value
     <fd-combobox [dropdownValues]="dropdownValues"
                  [placeholder]="'Type some text...'"
                  [displayFn]="myDisplayFunction"

@@ -70,10 +70,10 @@
     The Combobox component may also be used within Angular Reactive Forms.
 </description>
 <description>
-    Also in combobox can be used <code>[dropdownMode]</code>. Enabling this option changes the way the component
-    communicates with the outside. On dropdown mode, writing in text input doesn't change binded value, until it matches
-    one of displayed dropdown options. Also on this mode, combobox on communication uses model with same type as it's passed
-    to <code>[dropdownValues]</code>
+    Also in combobox can be used <code>[communicateByObject]</code>. Enabling this option changes the way the component
+    communicates with the outside. When combobox communicates by objects, writing in text input doesn't change binded
+    value, until it matches one of displayed dropdown options. Also on this mode, combobox on communication uses model
+    with same type as it's passed to <code>[dropdownValues]</code>
 </description>
 <component-example [name]="'ex6'">
     <fd-combobox-forms-example></fd-combobox-forms-example>
